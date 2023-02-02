@@ -1,5 +1,6 @@
 ﻿//Console.WriteLine("Hello, World!");
-namespace Operatorsexercise
+using System;
+namespace OperatorsExercise
 {
 class Program
     {
@@ -12,7 +13,13 @@ class Program
             int remainder = a % b;
 
             if (a == 17 && b == 4)
-                Console.WriteLine($"{a} / {b} is {quotient} remainder {remainder}");   
+                Console.WriteLine($"{a} / {b} is {quotient} remainder {remainder}");
+            Console.WriteLine();
+            Console.WriteLine("What is the radius of your circle?");
+            Console.WriteLine();
+            var radius = double.Parse(Console.ReadLine());
+            var answer1 = Methods.AreaOfCircle(radius);
+            Console.WriteLine(answer1);
         }
     }
 }
